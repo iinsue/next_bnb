@@ -1,7 +1,6 @@
 "use client";
-import Image from "next/image";
 
-0;
+import Image from "next/image";
 
 const Avatar = () => {
   return (
