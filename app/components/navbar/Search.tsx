@@ -17,23 +17,8 @@ const Search = () => {
         md:w-auto
         "
     >
-      <div
-        className="
-        flex
-        flex-row
-        items-center
-        justify-between
-        "
-      >
-        <div
-          className="
-            text-sm
-            font-semibold
-            px-6
-            "
-        >
-          AnyWhere
-        </div>
+      <div className="flex flex-row items-center justify-between ">
+        <div className="px-6 text-sm font-semibold ">AnyWhere</div>
 
         <div
           className="
@@ -50,20 +35,9 @@ const Search = () => {
           Any Week
         </div>
 
-        <div
-          className="
-            text-sm
-            pl-6
-            pr-2
-            text-gray-600
-            flex
-            flex-row
-            items-center
-            gap-3
-            "
-        >
+        <div className="flex flex-row items-center gap-3 pl-6 pr-2 text-sm text-gray-600 ">
           <div className="hidden sm:block">Add Guests</div>
-          <div className="p-2 bg-rose-500 rounded-full text-white">
+          <div className="p-2 text-white rounded-full bg-rose-500">
             <BiSearch size={18} />
           </div>
         </div>
