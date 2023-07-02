@@ -9,6 +9,7 @@ import { Listing, Reservation } from "@prisma/client";
 import { SafeUser } from "@/app/types";
 import useCountries from "@/app/hooks/useCountries";
 import Image from "next/image";
+import HeartButton from "../HeartButton";
 
 interface ListingCardProps {
   data: Listing;
@@ -79,6 +80,9 @@ const ListingCard: React.FC<ListingCardProps> = ({
             src={data.imageSrc}
             className="object-cover h-full w-full group-hover:scale-110 transition"
           />
+          <div className="absolute top-3 right-3">
+            <HeartButton listingId={data.id} currentUser={currentUser} />
+          </div>
         </div>
       </div>
     </div>
